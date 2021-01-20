@@ -1,0 +1,6 @@
+由于某些原因，github默认分支由master改为main
+但是git并未作改动，所以需要在git本地修改默认设置
+git config --global init.defaultBranch main
+不过如果在pull request一些旧项目的时候，不会造成错误吗？还是有其他的解决方式？
+暂时还不清楚需要继续学习。目前想到的办法是在这些项目中，去掉上述的--global，即
+git config init.defaultBranch main
